@@ -16,14 +16,13 @@ public class Fabula extends Escrito {
 	
 	public String interpretacion() {return this.interpretacion;}
 	public String toString() {
-		String r = "\"";
+		String r = "";
 		
 		r += super.getOrigen() + "\n";
 		r += super.getTitulo() + "\n";
 		r += super.getAutor() + "\n";
 		r += super.getPaginas() + "\n";
-		r += this.getEnsenanza() + "\n";
-		r += this.interpretacion() + "\"\n";
+		r += this.getEnsenanza();
 		
 		return r;}
 	

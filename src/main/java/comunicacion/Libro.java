@@ -21,7 +21,7 @@ public class Libro extends Escrito {
 	
 	public String interpretacion() {return this.interpretacion;}
 	public String toString() {
-		String r = "\"";
+		String r = "";
 		
 		r += super.getOrigen() + "\n";
 		r += super.getTitulo() + "\n";
@@ -29,8 +29,7 @@ public class Libro extends Escrito {
 		r += super.getPaginas() + "\n";
 		r += this.getCo_autor() + "\n";
 		r += this.getEditorial() + "\n";
-		r += this.getEdicion() + "\n";
-		r += this.interpretacion() + "\"\n";
+		r += this.getEdicion();
 		
 		return r;
 		

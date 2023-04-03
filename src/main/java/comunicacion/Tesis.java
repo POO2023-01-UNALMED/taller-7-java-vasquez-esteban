@@ -23,7 +23,7 @@ public class Tesis extends Escrito {
 	
 	public String interpretacion() {return this.interpretacion;}
 	public String toString() {
-		String r = "\"";
+		String r = "";
 		
 		r += super.getOrigen() + "\n";
 		r += super.getTitulo() + "\n";
@@ -32,8 +32,7 @@ public class Tesis extends Escrito {
 		r += this.getIdea() + "\n";
 		r += Tesis.argumentos.length + "\n";
 		r += this.getConclusion() + "\n";
-		r += this.getReferencias() + "\n";
-		r += this.interpretacion() + "\"\n";
+		r += this.getReferencias();
 		
 		return r;
 		

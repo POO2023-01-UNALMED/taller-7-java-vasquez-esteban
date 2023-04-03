@@ -19,15 +19,14 @@ public class Periodico extends Escrito {
 	
 	public String interpretacion() {return this.interpretacion;}
 	public String toString() {
-		String r = "\"";
+		String r = "";
 		
 		r += super.getOrigen() + "\n";
 		r += super.getTitulo() + "\n";
 		r += super.getAutor() + "\n";
 		r += super.getPaginas() + "\n";
 		r += this.getFecha() + "\n";
-		r += this.getPrimicia() + "\n";
-		r += this.interpretacion() + "\"\n";
+		r += this.getPrimicia();
 		
 		return r;
 	}

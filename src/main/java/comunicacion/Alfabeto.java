@@ -4,14 +4,15 @@ public class Alfabeto extends Pictograma {
 	private static String letras[];
 	private String interpretacion;
 	
-	public Alfabeto(String origen, String interpretacion) {
+	public Alfabeto(String origen, String[] letras, String interpretacion) {
 		super(origen);
+		this.setLetras(letras);
 		this.setInterpretacion(interpretacion);
 		
 	}
 	
 	public Alfabeto() {
-		this("", "");
+		this("", null, "");
 	}
 	
 	public int cantidadLetras() {return letras.length;}
